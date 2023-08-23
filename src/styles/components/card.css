@@ -1,0 +1,41 @@
+.card-container {
+  position: relative;
+  transition: all 0.2s;
+}
+
+.card-container:hover {
+  transform: scale(1.02);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.card-container:hover > .card,
+.card-container:hover > .card-stack {
+  box-shadow: 0 0 10px hsl(0, 0%, 85%);
+}
+
+.card-with-stack {
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  z-index: 1;
+  box-shadow: 0 0 10px hsl(0, 0%, 90%);
+}
+
+.card-stack {
+  position: absolute;
+  background-color: hsl(0, 0%, 99%);
+  height: 10px;
+  left: 10px;
+  right: 10px;
+  top: 100%;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 5px hsl(0, 0%, 90%);
+}

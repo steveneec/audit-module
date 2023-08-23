@@ -1,0 +1,45 @@
+.mobile-topbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 15px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+  background-color: color-mix(
+    in srgb,
+    var(--color-primary) 100%,
+    transparent 20%
+  );
+}
+
+.mo-tb-options-button {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.mo-tb-options-button:hover {
+  cursor: pointer;
+}
+
+.mo-tb-options-button span {
+  height: 2px;
+  background-color: white;
+}
+
+.mo-tb-options-button span:first-child {
+  width: 15px;
+  border-radius: 5px;
+}
+
+.mo-tb-options-button span:nth-child(2) {
+  width: 25px;
+}
+
+.mo-tb-options-button span:last-child {
+  width: 10px;
+}

@@ -1,0 +1,27 @@
+.breadcrums {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  animation: in ease 0.3s;
+}
+
+.breadcrum p {
+  color: black;
+  font-weight: 500;
+}
+
+.breadcrum:first-child > p {
+  color: var(--color-accent);
+}
+
+/*Animations*/
+
+@keyframes in {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

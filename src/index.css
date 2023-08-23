@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  /*colors*/
+  --color-shadow: #00000015;
+  --color-primary: #1e40af;
+  --color-secondary: #f1f5f9;
+  --color-success: #84cc16;
+  --color-warning: #facc15;
+  --color-pending: #f97316;
+  --color-danger: #dc2626;
+  --color-dark: #1e293b;
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-border: hsl(0, 0%, 80%);
+}
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1e293b;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* =10px */
+}
+
+body {
+  font-size: 1.4rem; /* =14px */
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/*text*/
+h1 {
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+/*texts*/
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*layouts*/
+
+.fill {
+  width: 100vw;
+  height: 100vh;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*animations*/
+
+.an-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: in-right 0.5s forwards;
+}
+
+@keyframes in-right {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.an-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: in-left 0.5s forwards;
+}
+
+@keyframes in-left {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.an-in-bottom {
+}
+
+.an-in-top {
+}
+
+/*distribution*/
+
+.cols-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-content: start;
+  transition: all 0.5s;
+}
+
+.cols-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-content: start;
+  transition: all 0.5s;
+}
+
+@media (min-width: 600px) {
+  .cols-2 {
+    grid-template-columns: 1fr 0.5fr;
+    transition: all 0.5s;
+  }
+}
+
+@media (min-width: 900px) {
+  .cols-4 {
+    grid-template-columns: 1fr 1fr;
+    transition: all 0.5s;
+  }
+}
+
+@media (min-width: 1800px) {
+  .cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+    transition: all 0.5s;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selector {
+  height: min-content;
+}

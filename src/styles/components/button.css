@@ -1,0 +1,178 @@
+.button {
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.2s;
+  height: -webkit-fit-content; /* Chrome */
+  height: -moz-fit-content; /* Firefox */
+  height: fit-content;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.button-wo-icon {
+  flex: 0;
+  padding: 10px;
+  border-radius: 5px !important;
+}
+
+.button-wo-icon > .btn-icon {
+  font-size: 1.8rem;
+}
+
+.button:disabled {
+  opacity: 0.6;
+}
+
+.button:disabled:hover {
+  cursor: not-allowed;
+}
+
+.btn-elevated {
+  box-shadow: 0 0 10px #9c9c9c;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+}
+.btn-secondary {
+  border: 1px solid var(--color-secondary);
+  background-color: var(--color-secondary);
+  color: var(--color-text-secondary);
+}
+.btn-success {
+  border: 1px solid var(--color-success);
+  background-color: var(--color-success);
+  color: var(--color-text-primary);
+}
+.btn-warning {
+  border: 1px solid var(--color-warning);
+  background-color: var(--color-warning);
+  color: var(--color-text-primary);
+}
+.btn-pending {
+  border: 1px solid var(--color-pending);
+  background-color: var(--color-pending);
+}
+.btn-danger {
+  border: 1px solid var(--color-danger);
+  background-color: var(--color-danger);
+}
+.btn-dark {
+  border: 1px solid var(--color-dark);
+  background-color: var(--color-dark);
+}
+
+.btn-primary-outline {
+  background-color: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.btn-primary-outline:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+}
+
+.btn-secondary-outline {
+  background-color: var(--color-secondary);
+  border: 1px solid
+    color-mix(in srgb, var(--color-text-secondary) 20%, transparent);
+  color: var(--color-text-secondary);
+}
+.btn-secondary-outline:hover {
+  background-color: color-mix(in srgb, var(--color-secondary) 20%, transparent);
+}
+
+.btn-success-outline {
+  background-color: white;
+  color: var(--color-success);
+  border: 1px solid var(--color-success);
+}
+.btn-success-outline:hover {
+  background-color: color-mix(in srgb, var(--color-success) 20%, transparent);
+}
+
+.btn-warning-outline {
+  background-color: white;
+  color: var(--color-warning);
+  border: 1px solid var(--color-warning);
+}
+.btn-warning-outline:hover {
+  background-color: color-mix(in srgb, var(--color-warning) 20%, transparent);
+}
+
+.btn-pending-outline {
+  background-color: white;
+  color: var(--color-pending);
+  border: 1px solid var(--color-pending);
+}
+.btn-pending-outline:hover {
+  background-color: color-mix(in srgb, var(--color-pending) 20%, transparent);
+}
+
+.btn-danger-outline {
+  background-color: white;
+  color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+}
+.btn-danger-outline:hover {
+  background-color: color-mix(in srgb, var(--color-danger) 20%, transparent);
+}
+
+.btn-dark-outline {
+  background-color: white;
+  color: var(--color-dark);
+  border: 1px solid var(--color-dark);
+}
+.btn-dark-outline:hover {
+  background-color: color-mix(in srgb, var(--color-dark) 20%, transparent);
+}
+
+.btn-icon > * {
+  color: var(--color-text-primary);
+}
+
+.btn-secondary > .btn-icon > *,
+.btn-secondary-outline > .btn-icon > * {
+  color: var(--color-text-secondary);
+}
+
+.btn-primary > .btn-icon > *,
+.btn-danger > .btn-icon > *,
+.btn-dark > .btn-icon > * {
+  color: white;
+}
+
+.btn-primary-outline > .btn-icon > * {
+  color: var(--color-primary);
+}
+.btn-success-outline > .btn-icon > * {
+  color: var(--color-success);
+}
+.btn-warning-outline > .btn-icon > * {
+  color: var(--color-warning);
+}
+.btn-pending-outline > .btn-icon > * {
+  color: var(--color-pending);
+}
+.btn-danger-outline > .btn-icon > * {
+  color: var(--color-danger);
+}
+.btn-dark-outline > .btn-icon > * {
+  color: var(--color-dark);
+}

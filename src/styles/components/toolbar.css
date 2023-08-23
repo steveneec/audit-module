@@ -1,0 +1,23 @@
+.toolbar {
+  border-bottom: 1px solid var(--color-border);
+  padding: 0 0 10px 0;
+  display: grid;
+  grid-template-areas: "breadcrum tools";
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tools {
+  animation: in 0.5s;
+}
+
+@keyframes in {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

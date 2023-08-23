@@ -1,0 +1,68 @@
+.ti-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.ti-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.input {
+  border: none;
+  outline: none;
+  transition: all 0.2s;
+  flex: 1;
+  padding: 10px;
+}
+
+.ti-content:has(.input:focus) {
+  box-shadow: 0 0 0 3px
+    color-mix(in srgb, var(--color-primary) 20%, transparent);
+}
+
+.ti-content:has(.input:disabled) {
+  background-color: var(--color-secondary);
+  opacity: 0.5;
+}
+
+.input:autofill,
+.input:-webkit-autofil,
+.input:disabled {
+  background-color: red;
+}
+
+.input:disabled:hover {
+  cursor: not-allowed;
+}
+
+.ti-label {
+  font-weight: 600;
+}
+
+.ti-help-text {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+}
+
+.ti-rounded {
+  border-radius: 50px;
+}
+
+.ti-icon-container {
+  background-color: var(--color-secondary);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ti-icon > * {
+  color: var(--color-text-secondary);
+}
